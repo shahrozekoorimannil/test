@@ -2,49 +2,13 @@ import Link from "next/link";
 import { ArrowRight, Star, ShieldCheck, Zap, Truck, CheckCircle } from "lucide-react";
 import { dummyProducts, dummyBrands, dummyReviews } from "@/data/dummy";
 
+import WebGLHero from "@/components/home/WebGLHero";
+
 export default function Home() {
   return (
     <div className="w-full">
-      {/* 1. Hero Section - Premium Apple-style */}
-      <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-navy">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-transparent z-10" />
-          <img 
-            src="https://images.unsplash.com/photo-1560440021-33f9b867899d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
-            alt="Premium Designer Fan" 
-            className="w-full h-full object-cover opacity-60"
-          />
-        </div>
-        <div className="container mx-auto px-4 lg:px-8 relative z-20">
-          <div className="max-w-3xl animate-in slide-in-from-bottom-8 duration-1000">
-            <span className="text-gold font-mono tracking-widest text-sm font-semibold uppercase mb-4 block">
-              Redefining Elegance
-            </span>
-            <h1 className="text-5xl md:text-7xl font-heading font-bold text-white leading-tight mb-6">
-              The Art of <br />
-              <span className="text-gold italic">Air & Light.</span>
-            </h1>
-            <p className="text-lg text-gray-300 mb-10 max-w-xl font-sans font-light leading-relaxed">
-              Discover Malappuram's finest collection of premium designer fans and luxury chandeliers. Engineered for performance, crafted for beauty.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                href="/products" 
-                className="bg-gold text-navy hover:bg-white hover:text-navy px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2 group shadow-xl"
-              >
-                Shop Now 
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link 
-                href="/category/designer-fans" 
-                className="bg-transparent border border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center"
-              >
-                Explore Collection
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 1. WebGL Hero Section */}
+      <WebGLHero />
 
       {/* 2. Trust Strip */}
       <section className="bg-gray-50 border-b border-gray-200 py-6">

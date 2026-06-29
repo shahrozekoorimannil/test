@@ -31,7 +31,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          
+
           <div>
             <h2 className="text-3xl font-heading font-bold text-navy dark:text-white mb-6">Our Legacy</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
@@ -40,7 +40,7 @@ export default function AboutPage() {
             <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
               We believe that lighting and fans are not just functional necessities, but crucial elements of interior design that define the ambiance and character of any space.
             </p>
-            
+
             <div className="space-y-4">
               {[
                 "Premium Curated Collections",
